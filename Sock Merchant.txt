@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int N,A,arr[101]={0},count=0,i;
+    scanf("%d",&N);
+    for(i=0;i<N;i++){
+       scanf("%d",&A);
+        arr[A]++;
+        if(arr[A]==2){
+            count++;
+            arr[A]=0;
+        }
+    }
+   printf("%d",count);
+}
